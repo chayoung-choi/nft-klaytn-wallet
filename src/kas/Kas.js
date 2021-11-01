@@ -1,7 +1,7 @@
 import CaverExtKAS from 'caver-js-ext-kas'
 
-const accessKeyId = "KASK57J04X14W26URJZRYHNF";
-const secretAccessKey = "Q3lgSAZQy9nOvoEXD8cFdl8-4CGt8Q3Js88M4miB";
+const accessKeyId = process.env.REACT_APP_ACCESS_KEY_ID
+const secretAccessKey = process.env.REACT_APP_SECRET_ACCESS_KEY
 
 const caver = new CaverExtKAS(1001, accessKeyId, secretAccessKey)
 
@@ -20,3 +20,6 @@ export const blockNumber = async () => {
   console.log(result)
   return result
 }
+
+// ** 클레이튼 계정 생성
+export const walletCreateAccount = async () => await caver.kas.wallet.createAccount()

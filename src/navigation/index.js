@@ -1,4 +1,4 @@
-import { Mail, Home, Server } from 'react-feather'
+import {Mail, Home, Server, User} from 'react-feather'
 
 export default [
   {
@@ -18,5 +18,11 @@ export default [
     title: '3 페이지',
     icon: <Mail size={20} />,
     navLink: '/3'
+  },
+  {
+    id: 'account',
+    title: '계정 관리',
+    icon: <User size={20} />,
+    navLink: '/account'
   }
 ]

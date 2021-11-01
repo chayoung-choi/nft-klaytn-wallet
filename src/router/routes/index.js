@@ -16,6 +16,11 @@ const Routes = [
     path: '/3',
     exact: true,
     component: lazy(() => import('../../views/Page3'))
+  },
+  {
+    path: '/account',
+    exact: true,
+    component: lazy(() => import('../../views/Account'))
   }
 ]
 

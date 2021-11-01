@@ -1,7 +1,7 @@
 import React from 'react'
 import {RecoilRoot} from "recoil"
-import Layout from "./layout/Layout"
 import {BrowserRouter as AppRouter, Switch} from 'react-router-dom'
+import Layout from "./layout/Layout";
 
 const App = () => (
     <RecoilRoot>
