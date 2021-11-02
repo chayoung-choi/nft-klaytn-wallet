@@ -7,7 +7,7 @@ const App = () => (
     <RecoilRoot>
       <AppRouter basename={process.env.REACT_APP_BASENAME}>
         <Switch>
-          <Layout/>
+          <Layout className='vh-100'/>
         </Switch>
       </AppRouter>
     </RecoilRoot>
